@@ -7,17 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Activities/DTOs/BaseActivityDto" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="../domain/Domain.csproj" />
     <ProjectReference Include="../persistence/Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
     <PackageReference Include="MediatR" Version="13.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Core/" />
   </ItemGroup>
 
 </Project>
